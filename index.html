@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>    
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -8,12 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <title>HomeWork</title>
 </head>
+
 <body>
     <!--Header Section-->
-    <header class="header">
+    <header>
+        <div class="header-container">
             <a class="header-studio" href="">
                 <span class="header-studio-web">web</span>
                 <span class="header-studio-link">studio</span></a>
@@ -40,97 +43,117 @@
                     </li>
                 </ul>
             </address>
+        </div>
     </header>
 
     <!--Main Section-->
-    <main class="main">
+    <main>
         <section class="section-hero">
-            <h1 class="hero-title">
-                Effective Solutions for Your Business
-            </h1>
-            <button class="hero-button" type="button">
-                Order Service
-            </button>
+                <h1 class="hero-title">
+                    Effective Solutions <br> for Your Business
+                </h1>
+            <div class="main-containter">
+                <button class="hero-button" type="button">
+                    Order Service
+                </button>
+            </div>
         </section>
         <section class="section-features">
-            <h2 hidden>Features</h2>
-            <ul class="features-list">
-                <li class="features-item">
-                    <h3>Strategy</h3>
-                    <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.</p>
-                </li>
-                <li class="features-item">
-                    <h3>Panctuality</h3>
-                    <p>Bring the key message to the brand's audience for the best price within the shortest possible time.</p>
-                </li>
-                <li class="features-item">
-                    <h3>Diligence</h3>
-                    <p>Research and confirm brands that present the strongest digital growth and minimize risk.</p>
-                </li>
-                <li class="features-item">
-                    <h3>Technologies</h3>
-                    <p>Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.</p>
-                </li>
-            </ul>
-        </section>
-        
-        <section class="section-services">
-            <h2 class="services-title">
-                What Are We Doing
-            </h2>
-            <ul class="services-list">
-                <li class="services-list-item">
-                    <img src="images/desktop.jpg" alt="apple monitor" width="360">                    
-                </li>
-                
-                <li class="services-list-item">
-                    <img src="images/cpinfo.jpg" alt="cellphone conversation" width="360">
-                </li>
-                
-                <li class="services-list-item">
-                    <img src="images/cphand.jpg" alt="most inspiring places" width="360">
-                </li>
-            </ul>           
+            <div class="features-container">
+                <h2 hidden>Features</h2>
+                <ul class="features-list">
+                    <li class="features-item">
+                        <h3>Strategy</h3>
+                        <p>Our goal is to identify the business problem to walk away with the perfect and creative solution.
+                        </p>
+                    </li>
+                    <li class="features-item">
+                        <h3>Panctuality</h3>
+                        <p>Bring the key message to the brand's audience for the best price within the shortest possible
+                            time.</p>
+                    </li>
+                    <li class="features-item">
+                        <h3>Diligence</h3>
+                        <p>Research and confirm brands that present the strongest digital growth and minimize risk.</p>
+                    </li>
+                    <li class="features-item">
+                        <h3>Technologies</h3>
+                        <p>Design practice focused on digital experiences. We bring forth a deep passion for
+                            problem-solving.</p>
+                    </li>
+                </ul>
+            </div>            
         </section>
 
-        <section class="section-team">        
-            <h2 class="team-title">
-                Our Team
-            </h2>
-            <ul class="team-list">
-                <li class="team-list-item">
-                    <img src="images/mario.jpg" alt="Product Designer" width="264" height="260">
-                    <h3 class="team-member">Mark Guererro</h3>
-                    <p class="team-member-position">Product Designer</p>
-                </li>
-        
-                <li class="team-list-item">
-                    <img src="images/tom.jpg" alt="rontend Designer" width="264" height="260">
-                    <h3 class="team-member">Tom Ford</h3>
-                    <p class="team-member-position">Frontend Designer</p>
-                </li>
-        
-                <li class="team-list-item">
-                    <img src="images/camila.jpg" alt="Marketing" width="264" height="260">
-                    <h3 class="team-member">Camila Garcia</h3>
-                    <p class="team-member-position">Marketing</p>
-                </li>
-        
-                <li class="team-list-item">
-                    <img src="images/daniel.jpg" alt="UI Designer" width="264" height="260">
-                    <h3 class="team-member">Daniel Wilson</h3>
-                    <p class="team-member-position">UI Designer</p>
-                </li>
-            </ul>
+        <section class="services">
+            <div class="services-container">
+                <h2 class="services-title">
+                    What Are We Doing
+                </h2>
+            </div>
+            <div>
+                <ul class="services-list">
+                    <li class="services-list-item">
+                        <img src="images/desktop.jpg" alt="apple monitor" width="360">
+                    </li>
+                
+                    <li class="services-list-item">
+                        <img src="images/cpinfo.jpg" alt="cellphone conversation" width="360">
+                    </li>
+                
+                    <li class="services-list-item">
+                        <img src="images/cphand.jpg" alt="most inspiring places" width="360">
+                    </li>
+                </ul>
+            </div>            
+        </section>
+
+        <section class="team">
+            <div class="title-container">
+                <h2 class="team-title">
+                    Our Team
+                </h2>
+            </div>
+            <div class="team-container">
+                <ul class="team-list">
+                    <li class="team-list-item">
+                        <img src="images/mario.jpg" alt="Product Designer" width="264" height="260">
+                        <h3 class="team-member">Mark Guererro</h3>
+                        <p class="team-member-position">Product Designer</p>
+                    </li>
+                
+                    <li class="team-list-item">
+                        <img src="images/tom.jpg" alt="rontend Designer" width="264" height="260">
+                        <h3 class="team-member">Tom Ford</h3>
+                        <p class="team-member-position">Frontend Designer</p>
+                    </li>
+                
+                    <li class="team-list-item">
+                        <img src="images/camila.jpg" alt="Marketing" width="264" height="260">
+                        <h3 class="team-member">Camila Garcia</h3>
+                        <p class="team-member-position">Marketing</p>
+                    </li>
+                
+                    <li class="team-list-item">
+                        <img src="images/daniel.jpg" alt="UI Designer" width="264" height="260">
+                        <h3 class="team-member">Daniel Wilson</h3>
+                        <p class="team-member-position">UI Designer</p>
+                    </li>
+                </ul>
+            </div>            
         </section>
     </main>
 
     <!--Footer Section-->
-    <footer class="footer">
+    <footer>
+        <div class="footer-container">
             <a class="footer-studio" href="">
                 <span class="footer-studio-web">web</span>
                 <span class="footer-studio-link">studio</span></a>
-            <p class="footer-studio-paragraph">Increase the flow of customers and<br>sales for your business with digital<br>marketing & growth solutions.</p>   
+            <p class="footer-studio-paragraph">Increase the flow of customers and<br>sales for your business with
+                digital<br>marketing & growth solutions.</p>
+        </div>
     </footer>
 </body>
+
 </html>
