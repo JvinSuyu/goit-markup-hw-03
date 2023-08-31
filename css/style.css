@@ -1,17 +1,8 @@
 a {
     text-decoration: none;
     font-style: normal;
-    color: inherit;
-    cursor: pointer;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font: inherit;
-    list-style: none;
-}
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -34,14 +25,38 @@ h3 {
     font-size: 32px;
     font-weight: 500;
 }
+h4 {
+    font-size: 24px;
+    font-weight: 500;
+}
+h5 {
+    font-size: 20px;
+    font-weight: 500;
+}
+h6 {
+    font-size: 16px;
+    font-weight: 500;
+}
 button {
     border: none;
     outline: none;
     cursor: pointer;
 }
+p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+}
 img {
     width: 100%;
     height: auto;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
 }
 :root {
     --iris: #4D5AE5;
@@ -125,6 +140,7 @@ main{
 .address a:hover {
     color: var(--iris);
 }
+
 /* main section*/
 .hero {
     flex-direction: column;
@@ -261,6 +277,7 @@ main{
     font-size: 16px;
     color: var(--slate);
 }
+
 /* Portfolio Header, Main and Footer */
 
 .portfolio{
@@ -281,14 +298,13 @@ main{
     gap: 40px;
     margin-bottom: 40px;
 }
-.filter-list-item .filter-active{
-    border-radius: 4px;
-    border: none;
-    background: var(--iris);
-    color: var(--white);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+.portfolio-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
 }
-.filter-list-item .filter-buttons{
+.filter-list-item .filter-buttons {
     font-size: 16px;
     font-weight: 500;
     color: var(--navyblue);
@@ -303,10 +319,18 @@ main{
     background: var(--cornflower);
     color: var(--iris);
 }
+
 .filter-list-item .filter-buttons:active {
     transform: scale(0.95);
 }
-.portfolio-list {
+.filter-list-item{
+    border-radius: 4px;
+    border: none;
+    background: var(--iris);
+    color: var(--white);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+}
+.portfolio-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -314,7 +338,6 @@ main{
     row-gap: 48px;
     column-gap: 24px;
 }
-
 .portfolio-list-item {
     display: flex;
     flex-direction: column;
@@ -330,12 +353,7 @@ main{
     width: 100%;
     object-fit: cover;
 }
-.portfolio-list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 40px;
-}
+
 .portfolio-list-item .list-item-content {
     display: flex;
     flex-direction: column;
