@@ -88,9 +88,9 @@ ul {
 .container {
     max-width: 1158px;
     margin: 0 auto;
-}
 
-header {
+}
+.header-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ main {
 }
 
 .nav-list {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
@@ -144,10 +144,10 @@ main {
 }
 
 .address {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
     gap: 40px;
-    margin-left: 332px;
+    margin-left: auto;
 }
 
 .address a {
@@ -160,11 +160,10 @@ main {
 }
 
 /* main section*/
-.hero {
+.hero-container {
     flex-direction: column;
     gap: 40px;
     background: var(--navyblue);
-    height: 600px;
 }
 
 .section {
@@ -173,17 +172,7 @@ main {
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: auto;
-}
-.section-about{
-    display: flex;
-    margin: 0;
     width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    padding-top: 120px;
-    padding-bottom: 40px;
 }
 .hero-title {
     font-family: "Raleway", sans-serif;
@@ -202,6 +191,8 @@ main {
     background: var(--iris);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     transition: all 0.1s ease-in-out;
+    margin-top: 48px;
+    margin-left: 200px;
     margin-bottom: 188px;
 }
 
@@ -214,9 +205,14 @@ main {
     transform: scale(0.95);
 }
 
+.about{
+    flex-direction: column;
+    padding: 120px 40px;
+}
 .about-title {
     text-align: center;
     color: var(--navyblue);
+    font-size: 2rem;
     font-weight: 500;
     margin-bottom: 40px;
 }
@@ -236,6 +232,7 @@ main {
 }
 
 .about-list-item h3 {
+    font-size: 22px;
     color: var(--navyblue);
 }
 
@@ -246,15 +243,15 @@ main {
 
 .services {
     flex-direction: column;
-    padding-top: 120px;
+    padding:0 40px 120px;
 }
 
 .services-title {
     text-align: center;
     color: var(--navyblue);
     font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 72px;
+    font-weight: 500;
+    margin-bottom: 40px;
 }
 
 .services-list {
@@ -262,7 +259,6 @@ main {
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding-bottom: 120px;
 }
 
 .teams {
@@ -431,13 +427,11 @@ main {
 }
 
 .footer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
     background: var(--navyblue);
     width: 100%;
     padding-top: 101.5px;
+    padding-left: 156px;
+    padding-bottom: 100px;
 }
 
 .footer-logo {
@@ -448,20 +442,15 @@ main {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    margin-right: 40px;
 }
 
 .footer-logo-span {
     color: var(--iris);
-    margin-left: 156px;
 }
 
 .footer p {
     font-size: 16px;
     color: var(--cloud);
-    width: 264px;
     line-height: 1.2;
     margin-top: 16px;
-    margin-bottom: 100px;
-    margin-left: 156px;
 }
