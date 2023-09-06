@@ -2,47 +2,12 @@ a {
     text-decoration: none;
     font-style: normal;
 }
-
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
 h1,h2,h3,h4,h5,h6 {
-    margin: 0;
-    padding: 0;
     text-transform: capitalize;
-}
-
-h1 {
-    font-size: 64px;
-    font-weight: 700;
-}
-
-h2 {
-    font-size: 48px;
-    font-weight: 600;
-}
-
-h3 {
-    font-size: 32px;
-    font-weight: 500;
-}
-
-h4 {
-    font-size: 24px;
-    font-weight: 500;
-}
-
-h5 {
-    font-size: 20px;
-    font-weight: 500;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: 500;
 }
 
 button {
@@ -60,8 +25,6 @@ button {
 }
 
 ul {
-    margin: 0;
-    padding: 0;
     list-style: none;
 }
 
@@ -167,9 +130,12 @@ main {
     align-items: center;
 }
 .hero-title {
-    font-family: "Raleway", sans-serif;
-    text-align: center;
     color: var(--white);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .hero-button {
@@ -218,17 +184,25 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+}
+.about-item-title {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
     text-align: left;
 }
-
 .teams-item-name {
     font-size: 22px;
     color: var(--navyblue);
 }
 
-.about-list-item p {
+.about-item-description{
     font-size: 16px;
-    color: var(--slate);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
 }
 
 .services {
@@ -237,11 +211,13 @@ main {
 }
 
 .services-title {
-    text-align: center;
     color: var(--navyblue);
-    font-size: 32px;
-    font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 72px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: center;
 }
 
 .services-list {
@@ -260,9 +236,11 @@ main {
 .teams-title {
     text-align: center;
     color: var(--navyblue);
-    font-size: 32px;
-    font-weight: 700;
     margin-bottom: 72px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
 }
 
 .teams-list {
@@ -293,6 +271,7 @@ main {
     align-items: center;
     gap: 8px;
     padding: 32px 16px;
+    width: 100%;
 }
 
 .teams-item-name {
@@ -342,8 +321,10 @@ main {
 }
 
 .filter-list-item .filter-buttons:hover {
-    background: var(--cornflower);
-    color: var(--iris);
+    background: var(--oceana);
+    color: var(--white);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+    border-color: var(--oceana);
 }
 
 .filter-list-item .filter-buttons:active {
@@ -355,7 +336,6 @@ main {
     border: none;
     background: var(--iris);
     color: var(--white);
-    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
 }
 
 .portfolio-list {
@@ -395,13 +375,21 @@ main {
 }
 
 .list-item-card-content {
-    font-size: 20px;
     color: var(--navyblue);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 .list-item-app {
+    color: var(--slate);
     font-size: 16px;
-    color: var(--slate, #434455);
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 .footer {
