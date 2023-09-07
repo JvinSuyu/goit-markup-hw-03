@@ -207,7 +207,7 @@ main {
 
 .services {
     flex-direction: column;
-    padding: 120px;
+    padding-bottom: 120px;
 }
 
 .services-title {
